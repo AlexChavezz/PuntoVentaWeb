@@ -1,0 +1,31 @@
+.authMainContainer {
+    height: 100vh;
+    width: 100vw;
+    display:flex;
+}
+.authFormContainer {
+    width: 100%;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.authFormControl {
+    display: flex;
+    flex-direction: column;
+    width: 400px
+}
+.authFormContainerTitle {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    margin-bottom: 200px;
+}
+.authImageContainer {
+    width: 100%;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

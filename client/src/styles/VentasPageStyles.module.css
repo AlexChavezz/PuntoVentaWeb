@@ -1,0 +1,123 @@
+.ventasMainContainer 
+{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+
+.ventasHeader
+{
+    height: 75px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px inset;
+}
+
+.ventasHeaderTitle
+{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 36px;
+    color: #6C63FF;
+    font-weight: 600;
+}
+
+.ventasMainContent
+{
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+}
+
+.ventasMainContentSearchSection
+{
+    width: 25%;
+    height: 100%;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+.ventasMainContentSaleSection
+{
+    width: 75%;
+    height: 100%;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid #ccc;
+}
+
+.ventasMainContentSearchBarContainer
+{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 1px 1px;
+    padding: 0 10px;
+    position: relative;
+}
+
+.ventasMainContentSearchResultsContainer
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    padding: 0 10px;
+    margin-top: 20px;
+}
+
+.ventasMainContentSearchBarIcon
+{
+    position: absolute;
+    right: 10px;
+    top: 0px;
+    bottom: 0px;
+    margin: auto;
+    width: 25px;
+}
+
+.ventasMainContentSearchBarForm
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ventasMainContentSearchBarInput
+{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #6C63FF;
+    font-weight: 600;
+}

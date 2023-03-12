@@ -4,6 +4,7 @@ import categoryIcon from '../assets/category.svg';
 import { useEffect, useState } from 'react';
 import UsersManagment from '../components/UsersManagment';
 import ProductsManagment from '../components/ProductsManagment';
+import { Navigate } from 'react-router-dom';
 
 export const AdminPage = () => {
 
@@ -13,7 +14,6 @@ export const AdminPage = () => {
     function handleManagmentPageChange(page: string) {
         if(managmentPage !== page) setManagmentPage(page);
     }
-
     return (
         <section
             className={styles.adminPageContainer}

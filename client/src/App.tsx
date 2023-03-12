@@ -9,6 +9,7 @@ function App() {
         <TextField id="filled-basic" label="Filled" variant="filled" />
         <TextField id="standard-basic" label="Standard" variant="standard" />
       </form>
+      <AppRouter />
     </div>
   )
 }

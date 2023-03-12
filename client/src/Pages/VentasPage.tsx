@@ -48,6 +48,29 @@ export const VentasPage = () => {
                 <article
                     className={styles.ventasMainContentSaleSection}
                 >
+                    <div
+                        className={styles.ventasMainContentSaleSectionContent}
+                    >
+                        <div
+                            className={styles.ventasMainContentSaleItemsList}
+                        >
+
+                        </div>
+                        <div
+                            className={styles.ventasMainContentSaleItemsInfo}
+                        >
+                            <div
+                                className={styles.ventasMainContentSaleItemsInfoTotal}
+                            >
+                                TOTAL: $0.00
+                            </div>
+                            <button
+                                className={styles.ventasMainContentSaleItemsInfoButton}
+                            >
+                                VENDER
+                            </button>
+                        </div>
+                    </div>
                 </article>
             </main>
         </section>

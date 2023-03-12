@@ -1,0 +1,151 @@
+.adminPageContainer 
+{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+.adminAsideMenuContainer
+{
+    transition: all 100ms ease-in;
+    height: 100%;
+    width: 50px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.adminAsideMenuContainerItems
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 10px
+}
+.adminAsideMenuItem
+{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+.span
+{
+    width: 100%;
+    color: #6C63FF;
+    display: none;
+    margin-left: 20px;
+    font-weight: 600;
+}
+
+.adminAsideMenuContainer:hover
+{
+    width: 200px;
+    animation: all 200ms ease-in;
+}
+.adminAsideMenuContainer:hover .span 
+{
+    animation: fade-in 200ms linear;
+    display: block;
+}
+
+.adminAsideMenuContainer:hover .adminAsideMenuContainerItems
+{
+    cursor:pointer;
+}
+
+.adminMainContentContainer
+{
+    width: calc(100% - 50px);
+    height: 100%;
+}
+
+
+
+/*
+
+    ANIMATIONS 
+
+*/
+
+@keyframes fade-in 
+/* 
+    animation fade-in implemented for the span element contained in the aside element
+    during 200ms linearly. 
+*/
+
+{
+    0% 
+    {
+        opacity: 0;
+    }
+    100% 
+    {
+        opacity: 1;
+    }
+}
+
+/*
+
+    ADMIN COMPONENTS
+
+*/
+
+.managmentPageContainer
+{
+    padding: 30px;
+    width: 100%;
+    height: 100%;
+}
+
+.viewInformationContainer
+{
+    padding-top: 100px;
+}
+.actionsContainer
+{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    height: 100%;
+}
+.actionsContainerItem:nth-child(1)
+{
+    align-items:center;
+    background-color: rgb(255, 0, 0);
+    border-radius: 5px; 
+    cursor:pointer;
+    margin: 0px 20px;
+    display: flex;
+    height: 35px;
+    justify-content: center;
+    width: 40px;
+}
+.actionsContainerItem:nth-child(1):hover
+{
+    background-color: rgb(255, 0, 0);
+}
+.actionsContainerItem:nth-child(2)
+{
+    align-items:center;
+    background-color: #6b63ff;    
+    border-radius: 5px; 
+    cursor:pointer;
+    height: 35px;
+    margin: 0px 20px;
+    justify-content: center;
+    display: flex;
+    width: 40px;
+}
+.actionsContainerItem:nth-child(2):hover
+{
+    background-color: #6b63ff;  
+}
+.actionsContainerItemImage
+{
+    width: 25px;
+    height: 25px;
+}

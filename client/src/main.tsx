@@ -29,6 +29,5 @@ const modernRouter = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
     <RouterProvider router={modernRouter} />
-    
   </React.StrictMode>
 )

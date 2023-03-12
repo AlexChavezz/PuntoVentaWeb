@@ -16,7 +16,7 @@ interface ValuesState {
 
 export const AuthPage = () => {
 
-    const { values, handleChange } = useForm(initialState);
+    const { values, handleChange } = useForm<ValuesState>(initialState);
     const { userName, password } = values;
 
     const onSubmit = (e: any) => {
@@ -37,14 +37,13 @@ export const AuthPage = () => {
                     Eben-Ezer’s SHOP
                 </h3>
                 <form
-                    // sx={{ width: '50ch' }}
                     className={styles.authFormControl}
                     onSubmit={onSubmit}
                     
                 >
                     <TextField
                         id="outlined-basic"
-                        label="User Name"
+                        label="USUARIO"
                         variant="outlined"
                         margin='normal'
                         onChange={handleChange}
@@ -54,7 +53,7 @@ export const AuthPage = () => {
                     />
                     <TextField
                         id="outlined-basic"
-                        label="Password"
+                        label="CONTRASEÑA"
                         variant="outlined"
                         margin='normal'
                         type={'password'}
@@ -66,9 +65,9 @@ export const AuthPage = () => {
                     <Button
                         variant="contained"
                         type='submit'
-                        style={{ marginTop: 20 }}
+                        style={{ marginTop: 20, backgroundColor:'#6C63FF' }}
                         onClick={onSubmit}
-                    >SIGN IN</Button>
+                    >INGRESAR</Button>
                 </form>
             </article>
             <article
